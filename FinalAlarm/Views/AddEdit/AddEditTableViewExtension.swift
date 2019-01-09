@@ -48,32 +48,5 @@ extension AddEditViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        switch indexPath.row {
-        case 0:
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RepeatVC") as? RepeatTableViewController {
-                if let navigator = navigationController {
-                    viewController.alarm = self.localAlarm
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
-        case 1:
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LabelVC") as? LabelViewController {
-                if let navigator = navigationController {
-                    viewController.alarm = self.localAlarm
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
-        case 2:
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SoundVC") as? SoundTableViewController {
-                if let navigator = navigationController {
-                    viewController.alarm = self.localAlarm
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
-        default:
-            print("Fail to push from options table")
-        }
-    }
+    
 }

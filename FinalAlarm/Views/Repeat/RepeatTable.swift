@@ -34,19 +34,6 @@ class RepeatTableViewController: UITableViewController {
         if alarm.repeatDays.contains(indexPath.row) {
             cell.accessoryType = .checkmark
         }
-
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if !alarm.repeatDays.contains(indexPath.row) {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-            alarm.repeatDays.append(indexPath.row)
-        }else{
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-            if let index = alarm.repeatDays.firstIndex(of: indexPath.row){
-                alarm.repeatDays.remove(at: index)
-            }
-        }
     }
 }

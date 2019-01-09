@@ -35,11 +35,4 @@ class SoundTableViewController: UITableViewController {
         }
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        self.tableView.visibleCells[alarm.songName].accessoryType = .none
-        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        alarm.songName = indexPath.row
-    }
 }

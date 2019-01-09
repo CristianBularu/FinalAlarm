@@ -8,7 +8,7 @@
 import RealmSwift
 import UIKit
 
-class AddEditViewController: UIViewController{
+class AddEditViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var optionsTable: UITableView!
     @IBOutlet weak var DatePickerOutlet: UIDatePicker!
@@ -37,7 +37,7 @@ class AddEditViewController: UIViewController{
             if alarm != nil {
                 localAlarm = Alarm()
                 localAlarm!.Id = alarm!.Id
-                localAlarm!.isOn = alarm!.isOn
+                //localAlarm!.isOn = alarm!.isOn
                 localAlarm!.time = alarm!.time
                 localAlarm!.label = alarm!.label
                 localAlarm.repeatDays.removeAll()
@@ -54,51 +54,41 @@ class AddEditViewController: UIViewController{
         self.DatePickerOutlet.date = localAlarm.time
     }
     
-    @IBAction func CancelButton(_ sender: UIBarButtonItem) {
-        alarmUuid = nil
-        localAlarm = nil
-        self.navigationController?.popViewController(animated: true)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
     }
     
-    @IBAction func SaveButton(_ sender: UIBarButtonItem) {
-        
-        let realm = try! Realm()
-        let alarm = realm.objects(Alarm.self).filter("Id = '\(alarmUuid ?? "")'").first
-        
-        localAlarm!.time = DatePickerOutlet.date
-        
-        if alarm != nil {
-            removeAlarm(alarm: alarm!)//remove the old alarm/s if exists
-        }
-        addAlarm(alarm: localAlarm)//add the new alarm/s
-        
-        if !(newAlarm ?? true) {//if the alarm iis not new
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "moreSettings", for: indexPath) //as! AlarmTableViewCell
+        switch indexPath.row {
+        case 0:
+            let repeatCell = cell.viewWithTag(1) as! UILabel
+            repeatCell.text = "Repeat"
             
-            try! realm.write {
-                
-                if alarm != nil {//update the entity from realm
-                    alarm!.Id = localAlarm!.Id
-                    alarm!.isOn = localAlarm!.isOn
-                    alarm!.time = localAlarm!.time
-                    alarm!.label = localAlarm!.label
-                    alarm!.repeatDays.removeAll()
-                    for day in localAlarm!.repeatDays {
-                        alarm!.repeatDays.append(day)
-                    }
-                    alarm!.songName = localAlarm!.songName
-                }
-            }
-        } else {
-            try! realm.write {
-                realm.add(localAlarm)//add entitty to realm
-            }
+            let array = Array(localAlarm!.repeatDays)
+            let repeatValue = cell.viewWithTag(2) as! UILabel
+            repeatValue.text = getShortRepeatDays(array: array)
+            return cell
+        case 1:
+            let label = cell.viewWithTag(1) as! UILabel
+            label.text = "Label"
+            
+            let labelValue = cell.viewWithTag(2) as! UILabel
+            labelValue.text = localAlarm!.label
+            return cell
+        case 2:
+            let soundCell = cell.viewWithTag(1) as! UILabel
+            soundCell.text = "Sound"
+            
+            let soundValue = cell.viewWithTag(2) as! UILabel
+            soundValue.text = soundsDictionary[localAlarm.songName]!.rawValue
+            return cell
+        default:
+            return UITableViewCell()
         }
-        self.navigationController?.popViewController(animated: true)
     }
 }
-
-
-
-
-
-

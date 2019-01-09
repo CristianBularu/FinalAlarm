@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19009AC61538AC974066D0CC /* Pods_FinalAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C145A6DD3DD0E088C8B6A6A2 /* Pods_FinalAlarm.framework */; };
-		4023671A21C8D94A004BEA6A /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023671921C8D94A004BEA6A /* AlarmModel.swift */; };
-		4023671C21C8E489004BEA6A /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023671B21C8E489004BEA6A /* AddEditViewController.swift */; };
+		4023671A21C8D94A004BEA6A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023671921C8D94A004BEA6A /* Alarm.swift */; };
+		4023671C21C8E489004BEA6A /* AddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023671B21C8E489004BEA6A /* AddEditView.swift */; };
 		402841C921CE47CC000765E3 /* cydon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402841C121CE47CB000765E3 /* cydon.mp3 */; };
 		402841CA21CE47CC000765E3 /* trip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402841C221CE47CB000765E3 /* trip.mp3 */; };
 		402841CB21CE47CC000765E3 /* zyrytsounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402841C321CE47CB000765E3 /* zyrytsounds.mp3 */; };
@@ -19,24 +19,28 @@
 		402841D221CE4A50000765E3 /* car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402841D021CE4A50000765E3 /* car.mp3 */; };
 		402841D321CE4A50000765E3 /* sieuamthanh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402841D121CE4A50000765E3 /* sieuamthanh.mp3 */; };
 		4042C7EC21C7B40C00D44AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4042C7EB21C7B40C00D44AD9 /* AppDelegate.swift */; };
-		4042C7EE21C7B40C00D44AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4042C7ED21C7B40C00D44AD9 /* ViewController.swift */; };
+		4042C7EE21C7B40C00D44AD9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4042C7ED21C7B40C00D44AD9 /* View.swift */; };
 		4042C7F121C7B40C00D44AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4042C7EF21C7B40C00D44AD9 /* Main.storyboard */; };
 		4042C7F621C7B40E00D44AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4042C7F421C7B40E00D44AD9 /* LaunchScreen.storyboard */; };
 		404C5C3C21D4E91B0087C004 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C3B21D4E91B0087C004 /* NavigationController.swift */; };
-		404C5C3E21D4E9BA0087C004 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C3D21D4E9BA0087C004 /* TableViewExtension.swift */; };
 		404C5C4021D4EAF50087C004 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C3F21D4EAF50087C004 /* AlarmTableViewCell.swift */; };
-		404C5C4321D4EC0B0087C004 /* AddRemoveHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C4221D4EC0B0087C004 /* AddRemoveHelpers.swift */; };
-		404C5C4721D4ED370087C004 /* AddEditTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C4621D4ED370087C004 /* AddEditTableViewExtension.swift */; };
+		404C5C4321D4EC0B0087C004 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C5C4221D4EC0B0087C004 /* Helpers.swift */; };
 		405353A721D4F77000A3ACE3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405353A621D4F77000A3ACE3 /* Globals.swift */; };
 		405D476A21CE504200AA8388 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405D476921CE504200AA8388 /* Images-2.xcassets */; };
-		40FBE54E21CA53B500D27DDF /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FBE54D21CA53B500D27DDF /* LabelViewController.swift */; };
-		40FD4D4A21CBF4BC001EB94F /* RepeatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD4D4921CBF4BC001EB94F /* RepeatTableViewController.swift */; };
-		40FD4D4C21CBF4CF001EB94F /* SoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD4D4B21CBF4CF001EB94F /* SoundTableViewController.swift */; };
+		40A0B58721E5FEF40045CB68 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0B58621E5FEF40045CB68 /* Controller.swift */; };
+		40A0B58921E604920045CB68 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0B58821E604920045CB68 /* CellController.swift */; };
+		40A0B58B21E60F5B0045CB68 /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0B58A21E60F5B0045CB68 /* AddEditController.swift */; };
+		40E4168A21E5F7240008B372 /* LabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E4168921E5F7240008B372 /* LabelController.swift */; };
+		40E4168C21E5F8900008B372 /* SoundTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E4168B21E5F8900008B372 /* SoundTableController.swift */; };
+		40E4168E21E5F9180008B372 /* RepeatTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E4168D21E5F9180008B372 /* RepeatTableController.swift */; };
+		40FBE54E21CA53B500D27DDF /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FBE54D21CA53B500D27DDF /* Label.swift */; };
+		40FD4D4A21CBF4BC001EB94F /* RepeatTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD4D4921CBF4BC001EB94F /* RepeatTable.swift */; };
+		40FD4D4C21CBF4CF001EB94F /* SoundTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD4D4B21CBF4CF001EB94F /* SoundTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4023671921C8D94A004BEA6A /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
-		4023671B21C8E489004BEA6A /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		4023671921C8D94A004BEA6A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		4023671B21C8E489004BEA6A /* AddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditView.swift; sourceTree = "<group>"; };
 		402841C121CE47CB000765E3 /* cydon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cydon.mp3; path = ../../../../../Downloads/cydon.mp3; sourceTree = "<group>"; };
 		402841C221CE47CB000765E3 /* trip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = trip.mp3; path = ../../../../../Downloads/trip.mp3; sourceTree = "<group>"; };
 		402841C321CE47CB000765E3 /* zyrytsounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = zyrytsounds.mp3; path = ../../../../../Downloads/zyrytsounds.mp3; sourceTree = "<group>"; };
@@ -47,20 +51,24 @@
 		402841D121CE4A50000765E3 /* sieuamthanh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sieuamthanh.mp3; path = ../../../../../Downloads/sieuamthanh.mp3; sourceTree = "<group>"; };
 		4042C7E821C7B40C00D44AD9 /* FinalAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4042C7EB21C7B40C00D44AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4042C7ED21C7B40C00D44AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4042C7ED21C7B40C00D44AD9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4042C7F021C7B40C00D44AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4042C7F521C7B40E00D44AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4042C7F721C7B40E00D44AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404C5C3B21D4E91B0087C004 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		404C5C3D21D4E9BA0087C004 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		404C5C3F21D4EAF50087C004 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
-		404C5C4221D4EC0B0087C004 /* AddRemoveHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveHelpers.swift; sourceTree = "<group>"; };
-		404C5C4621D4ED370087C004 /* AddEditTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewExtension.swift; sourceTree = "<group>"; };
+		404C5C4221D4EC0B0087C004 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		405353A621D4F77000A3ACE3 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		405D476921CE504200AA8388 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
-		40FBE54D21CA53B500D27DDF /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
-		40FD4D4921CBF4BC001EB94F /* RepeatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewController.swift; sourceTree = "<group>"; };
-		40FD4D4B21CBF4CF001EB94F /* SoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewController.swift; sourceTree = "<group>"; };
+		40A0B58621E5FEF40045CB68 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		40A0B58821E604920045CB68 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		40A0B58A21E60F5B0045CB68 /* AddEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
+		40E4168921E5F7240008B372 /* LabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelController.swift; sourceTree = "<group>"; };
+		40E4168B21E5F8900008B372 /* SoundTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableController.swift; sourceTree = "<group>"; };
+		40E4168D21E5F9180008B372 /* RepeatTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableController.swift; sourceTree = "<group>"; };
+		40FBE54D21CA53B500D27DDF /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		40FD4D4921CBF4BC001EB94F /* RepeatTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTable.swift; sourceTree = "<group>"; };
+		40FD4D4B21CBF4CF001EB94F /* SoundTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTable.swift; sourceTree = "<group>"; };
 		8C050FE87A93A48DE82B5C14 /* Pods-FinalAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAlarm/Pods-FinalAlarm.release.xcconfig"; sourceTree = "<group>"; };
 		C145A6DD3DD0E088C8B6A6A2 /* Pods_FinalAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEE27A763C813A9AFC4D21B /* Pods-FinalAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAlarm/Pods-FinalAlarm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,12 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				4042C7EB21C7B40C00D44AD9 /* AppDelegate.swift */,
-				4023671921C8D94A004BEA6A /* AlarmModel.swift */,
-				405353A621D4F77000A3ACE3 /* Globals.swift */,
-				404C5C3B21D4E91B0087C004 /* NavigationController.swift */,
-				404C5C3A21D4E8C50087C004 /* FirstPage */,
-				404C5C4121D4EBD40087C004 /* SecondPage */,
-				405353A821D4F83300A3ACE3 /* ThirdTierPages */,
+				40E4167C21E5E1D30008B372 /* Model */,
+				40E4167D21E5E1D90008B372 /* Views */,
+				40E4167E21E5E1E40008B372 /* Controllers */,
 				4042C7EF21C7B40C00D44AD9 /* Main.storyboard */,
 				4042C7F421C7B40E00D44AD9 /* LaunchScreen.storyboard */,
 				4042C7F721C7B40E00D44AD9 /* Info.plist */,
@@ -130,34 +135,121 @@
 			path = FinalAlarm;
 			sourceTree = "<group>";
 		};
-		404C5C3A21D4E8C50087C004 /* FirstPage */ = {
+		40E4167C21E5E1D30008B372 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4042C7ED21C7B40C00D44AD9 /* ViewController.swift */,
-				404C5C3D21D4E9BA0087C004 /* TableViewExtension.swift */,
+				405353A621D4F77000A3ACE3 /* Globals.swift */,
+				4023671921C8D94A004BEA6A /* Alarm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40E4167D21E5E1D90008B372 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40E4167F21E5F42D0008B372 /* Home */,
+				40E4168021E5F43B0008B372 /* AddEdit */,
+				40E4168221E5F45B0008B372 /* Repeat */,
+				40E4168121E5F44D0008B372 /* Label */,
+				40E4168321E5F4640008B372 /* Sound */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40E4167E21E5E1E40008B372 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				404C5C3B21D4E91B0087C004 /* NavigationController.swift */,
+				404C5C4221D4EC0B0087C004 /* Helpers.swift */,
+				40E4168421E5F6080008B372 /* Home */,
+				40E4168521E5F6110008B372 /* AddEdit */,
+				40E4168621E5F61A0008B372 /* Repeat */,
+				40E4168821E5F6F00008B372 /* Label */,
+				40E4168721E5F6390008B372 /* Sound */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		40E4167F21E5F42D0008B372 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4042C7ED21C7B40C00D44AD9 /* View.swift */,
 				404C5C3F21D4EAF50087C004 /* AlarmTableViewCell.swift */,
 			);
-			path = FirstPage;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		404C5C4121D4EBD40087C004 /* SecondPage */ = {
+		40E4168021E5F43B0008B372 /* AddEdit */ = {
 			isa = PBXGroup;
 			children = (
-				4023671B21C8E489004BEA6A /* AddEditViewController.swift */,
-				404C5C4221D4EC0B0087C004 /* AddRemoveHelpers.swift */,
-				404C5C4621D4ED370087C004 /* AddEditTableViewExtension.swift */,
+				4023671B21C8E489004BEA6A /* AddEditView.swift */,
 			);
-			path = SecondPage;
+			path = AddEdit;
 			sourceTree = "<group>";
 		};
-		405353A821D4F83300A3ACE3 /* ThirdTierPages */ = {
+		40E4168121E5F44D0008B372 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				40FBE54D21CA53B500D27DDF /* LabelViewController.swift */,
-				40FD4D4921CBF4BC001EB94F /* RepeatTableViewController.swift */,
-				40FD4D4B21CBF4CF001EB94F /* SoundTableViewController.swift */,
+				40FBE54D21CA53B500D27DDF /* Label.swift */,
 			);
-			path = ThirdTierPages;
+			path = Label;
+			sourceTree = "<group>";
+		};
+		40E4168221E5F45B0008B372 /* Repeat */ = {
+			isa = PBXGroup;
+			children = (
+				40FD4D4921CBF4BC001EB94F /* RepeatTable.swift */,
+			);
+			path = Repeat;
+			sourceTree = "<group>";
+		};
+		40E4168321E5F4640008B372 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				40FD4D4B21CBF4CF001EB94F /* SoundTable.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		40E4168421E5F6080008B372 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				40A0B58621E5FEF40045CB68 /* Controller.swift */,
+				40A0B58821E604920045CB68 /* CellController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		40E4168521E5F6110008B372 /* AddEdit */ = {
+			isa = PBXGroup;
+			children = (
+				40A0B58A21E60F5B0045CB68 /* AddEditController.swift */,
+			);
+			path = AddEdit;
+			sourceTree = "<group>";
+		};
+		40E4168621E5F61A0008B372 /* Repeat */ = {
+			isa = PBXGroup;
+			children = (
+				40E4168D21E5F9180008B372 /* RepeatTableController.swift */,
+			);
+			path = Repeat;
+			sourceTree = "<group>";
+		};
+		40E4168721E5F6390008B372 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				40E4168B21E5F8900008B372 /* SoundTableController.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		40E4168821E5F6F00008B372 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				40E4168921E5F7240008B372 /* LabelController.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		484946CD87BA907DFC475388 /* Frameworks */ = {
@@ -282,19 +374,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				404C5C3E21D4E9BA0087C004 /* TableViewExtension.swift in Sources */,
-				40FD4D4A21CBF4BC001EB94F /* RepeatTableViewController.swift in Sources */,
+				40FD4D4A21CBF4BC001EB94F /* RepeatTable.swift in Sources */,
+				40A0B58921E604920045CB68 /* CellController.swift in Sources */,
+				40E4168E21E5F9180008B372 /* RepeatTableController.swift in Sources */,
 				404C5C3C21D4E91B0087C004 /* NavigationController.swift in Sources */,
-				4023671C21C8E489004BEA6A /* AddEditViewController.swift in Sources */,
-				40FBE54E21CA53B500D27DDF /* LabelViewController.swift in Sources */,
+				4023671C21C8E489004BEA6A /* AddEditView.swift in Sources */,
+				40FBE54E21CA53B500D27DDF /* Label.swift in Sources */,
+				40A0B58721E5FEF40045CB68 /* Controller.swift in Sources */,
 				404C5C4021D4EAF50087C004 /* AlarmTableViewCell.swift in Sources */,
-				4042C7EE21C7B40C00D44AD9 /* ViewController.swift in Sources */,
+				4042C7EE21C7B40C00D44AD9 /* View.swift in Sources */,
 				4042C7EC21C7B40C00D44AD9 /* AppDelegate.swift in Sources */,
-				4023671A21C8D94A004BEA6A /* AlarmModel.swift in Sources */,
-				404C5C4721D4ED370087C004 /* AddEditTableViewExtension.swift in Sources */,
-				40FD4D4C21CBF4CF001EB94F /* SoundTableViewController.swift in Sources */,
+				4023671A21C8D94A004BEA6A /* Alarm.swift in Sources */,
+				40FD4D4C21CBF4CF001EB94F /* SoundTable.swift in Sources */,
+				40E4168A21E5F7240008B372 /* LabelController.swift in Sources */,
 				405353A721D4F77000A3ACE3 /* Globals.swift in Sources */,
-				404C5C4321D4EC0B0087C004 /* AddRemoveHelpers.swift in Sources */,
+				40A0B58B21E60F5B0045CB68 /* AddEditController.swift in Sources */,
+				404C5C4321D4EC0B0087C004 /* Helpers.swift in Sources */,
+				40E4168C21E5F8900008B372 /* SoundTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

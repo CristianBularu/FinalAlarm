@@ -12,7 +12,7 @@ let daysDictionary : [Int: RepeatDays] = [0:.monday, 1:.tuesday, 2:.wednesday, 3
 let soundsDictionary : [Int: Songs] = [0:.airRaid, 1:.analog, 2:.car, 3:.coltonmanz, 4:.cydon, 5:.sieuamthanh, 6:.trip, 7:.zyrytsounds]
 
 enum RepeatDays: String{
-    case monday = "Moonday"
+    case monday = "Monday"
     case tuesday = "Tuesday"
     case wednesday = "Wednesday"
     case thursday = "Thursday"

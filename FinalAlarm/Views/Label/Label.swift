@@ -13,15 +13,6 @@ class LabelViewController: UIViewController {
 
     var alarm: Alarm! = nil
     
-    @IBAction func didEdit(_ sender: UITextField) {
-        if sender.text?.isEmpty ?? true {
-            alarm.label = "Alarm"
-        }else{
-            alarm.label = sender.text!
-        }
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

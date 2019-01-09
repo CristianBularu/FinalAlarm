@@ -7,8 +7,7 @@
 //
 import UserNotifications
 
-func addAlarm(alarm: Alarm){
-    
+func addAlarmToUN(alarm: Alarm){
     var components = DateComponents()
     components.hour = Calendar.current.component(.hour, from: alarm.time)
     components.minute = Calendar.current.component(.minute, from: alarm.time)
@@ -45,7 +44,7 @@ func addAlarm(alarm: Alarm){
     }
 }
 
-func removeAlarm(alarm: Alarm){
+func removeAlarmFromUN(alarm: Alarm){
     if alarm.repeatDays.count == 0 {
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [alarm.Id])
     }else {
@@ -58,19 +57,21 @@ func removeAlarm(alarm: Alarm){
 }
 
 func getShortRepeatDays(array: [Int]) -> String{
-    if array.count == 0 {
+    var arrayLocal = array
+    arrayLocal.sort()
+    if arrayLocal.count == 0 {
         return "Never"
-    } else if array.count == 7{
+    } else if arrayLocal.count == 7{
         return "Every Day"
-    } else if array.count == 1 {
-        return "Every \(daysDictionary[array.first!]!.rawValue)"
-    } else if array.count == 2 && array.contains(5) && array.contains(6) {
+    } else if arrayLocal.count == 1 {
+        return "Every \(daysDictionary[arrayLocal.first!]!.rawValue)"
+    } else if arrayLocal.count == 2 && arrayLocal.contains(5) && arrayLocal.contains(6) {
         return "Every Weekend "
-    } else if array.count == 5 && !array.contains(5) && !array.contains(6) {
+    } else if arrayLocal.count == 5 && !arrayLocal.contains(5) && !arrayLocal.contains(6) {
         return "Every Weekday"
     } else {
         var finalString: String! = nil
-        for day in array {
+        for day in arrayLocal {
             let code = daysDictionary[day]!.rawValue
             let first3 = code.substring(to: code.index(code.startIndex, offsetBy: 3))
             
